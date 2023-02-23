@@ -52,6 +52,9 @@ extension DetailController {
     }
     
     private func set(_ title: String, detail: String) {
+        
+        if detail.count == 0 { return }
+        
         let item = CellItem()
         item.title = title
         item.detail = detail.htmlDecoded
