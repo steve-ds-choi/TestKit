@@ -100,11 +100,9 @@ extension BrowserController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = list[indexPath.row]
-        let cell = tableView.dequeueCell(BrowserCell.self)
-
-        cell.load(item)
-
-        return cell
+        return tableView.dequeueCell(BrowserCell.self).then {
+            $0.load(item)
+        }
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
