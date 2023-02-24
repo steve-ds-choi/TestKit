@@ -24,6 +24,7 @@
                     <rect key="frame" x="0.0" y="240" width="393" height="612"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <gestureRecognizers/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Fy4-mD-Fuv"/>
                         <outlet property="delegate" destination="-1" id="OtA-Ft-OZo"/>
@@ -53,8 +54,17 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <gestureRecognizers/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="Ev0-wv-xFh" appends="YES" id="duM-up-BAP"/>
+            </connections>
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
+        <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="Ev0-wv-xFh">
+            <rectEdge key="edges" left="YES"/>
+            <connections>
+                <action selector="buttonBack:" destination="-1" id="DNc-c8-zZe"/>
+            </connections>
+        </screenEdgePanGestureRecognizer>
     </objects>
     <resources>
         <image name="photo.circle" catalog="system" width="128" height="123"/>
