@@ -54,6 +54,7 @@ class ViewModel {
     private var bags   = Set<AnyCancellable>()
 
     @Published var list = [Item]()
+    @Published var body: Item!
 
     private var searchText = ""
     private var searchPage = 1
@@ -85,9 +86,9 @@ class ViewModel {
         searchList()
     }
 
-    func requestBody(_ item: Item, handler: @escaping (Item?) -> Void) {
+    func requestBody(_ item: Item) {
         if item.body != nil {
-            handler(item)
+            body = item
             return
         }
 
@@ -95,14 +96,14 @@ class ViewModel {
             .sink { result in
                 switch result {
                 case .failure(let error):
-                    handler(nil)
+                    self.body = nil
                     print("Failure error:", error.localizedDescription)
                 default:
                     break
                 }
             } receiveValue: {
                 item.body = $0
-                handler(item)
+                self.body = item
             }
             .store(in: &bags)
     }

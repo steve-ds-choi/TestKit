@@ -61,6 +61,12 @@ extension BrowserController {
                 self.reload()
             }
             .store(in: &bags)
+        
+        vm.$body
+            .sink {
+                self.showDetail($0)
+            }
+            .store(in: &bags)
     }
 }
 
@@ -95,8 +101,6 @@ extension BrowserController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = list[indexPath.row]
-        vm.requestBody(item) {
-            self.showDetail($0)
-        }
+        vm.requestBody(item)
     }
 }
