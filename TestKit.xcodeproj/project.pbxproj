@@ -13,7 +13,7 @@
 		EB2C6D9729A21BD500C5B026 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C6D9529A21BD500C5B026 /* DetailCell.swift */; };
 		EB2C6D9829A21BD500C5B026 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2C6D9629A21BD500C5B026 /* DetailCell.xib */; };
 		EB2C6D9B29A842F300C5B026 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EB2C6D9A29A842F300C5B026 /* SnapKit */; };
-		EB2C6D9D29A8595000C5B026 /* SeverAPI_github.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C6D9C29A8595000C5B026 /* SeverAPI_github.swift */; };
+		EB2C6D9F29A86B9D00C5B026 /* ServerAPI_github.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C6D9E29A86B9D00C5B026 /* ServerAPI_github.swift */; };
 		EB70700C299CA2C200DF57CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70700B299CA2C200DF57CA /* AppDelegate.swift */; };
 		EB70700E299CA2C200DF57CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70700D299CA2C200DF57CA /* SceneDelegate.swift */; };
 		EB707010299CA2C200DF57CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70700F299CA2C200DF57CA /* ViewController.swift */; };
@@ -42,7 +42,7 @@
 		EB2C6D8F299F71F700C5B026 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		EB2C6D9529A21BD500C5B026 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		EB2C6D9629A21BD500C5B026 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
-		EB2C6D9C29A8595000C5B026 /* SeverAPI_github.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SeverAPI_github.swift; path = ../../../../.Trash/TestKit2/TestKit/ViewModel/SeverAPI_github.swift; sourceTree = "<group>"; };
+		EB2C6D9E29A86B9D00C5B026 /* ServerAPI_github.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerAPI_github.swift; sourceTree = "<group>"; };
 		EB707008299CA2C200DF57CA /* TestKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB70700B299CA2C200DF57CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB70700D299CA2C200DF57CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				EB70702C299DC53A00DF57CA /* Server.swift */,
-				EB2C6D9C29A8595000C5B026 /* SeverAPI_github.swift */,
+				EB2C6D9E29A86B9D00C5B026 /* ServerAPI_github.swift */,
 				EB707022299CC88700DF57CA /* ServerAPI_itbook.swift */,
 				EB707024299CC8A500DF57CA /* ViewModel.swift */,
 			);
@@ -270,9 +270,9 @@
 				EB70700C299CA2C200DF57CA /* AppDelegate.swift in Sources */,
 				EB707038299E64F800DF57CA /* TKViewController.swift in Sources */,
 				EB707041299EFF8600DF57CA /* DetailController.swift in Sources */,
+				EB2C6D9F29A86B9D00C5B026 /* ServerAPI_github.swift in Sources */,
 				EB70702D299DC53A00DF57CA /* Server.swift in Sources */,
 				EB22B823299F124A00731B4D /* BrowserCell.swift in Sources */,
-				EB2C6D9D29A8595000C5B026 /* SeverAPI_github.swift in Sources */,
 				EB707036299DC8C300DF57CA /* UIView+Extension.swift in Sources */,
 				EB70703D299EFF5800DF57CA /* BrowserController.swift in Sources */,
 				EB2C6D9729A21BD500C5B026 /* DetailCell.swift in Sources */,
