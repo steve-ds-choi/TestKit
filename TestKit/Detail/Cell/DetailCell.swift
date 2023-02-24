@@ -19,7 +19,9 @@ class DetailCell: UITableViewCell {
 
         stackView.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview().offset(6)
-            $0.top.bottom.equalToSuperview().offset(10)
+            $0.trailing.equalToSuperview().offset(-6)
+            $0.top.equalToSuperview().offset(10)
+            $0.bottom.equalToSuperview().offset(-10)
         }
     }
 

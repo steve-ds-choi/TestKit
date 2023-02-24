@@ -23,7 +23,7 @@ class Server {
 
         var request = URLRequest(url: url)
         if token.count > 0 {
-            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+            request.setValue("Bearer ghp_\(token)", forHTTPHeaderField: "Authorization")
         }
 
         if accept.count > 0 {
@@ -38,7 +38,6 @@ class Server {
         return URLSession.shared.dataTaskPublisher(for: request)
             .map { $0.data }
             .decode(type: type, decoder: decoder)
-            .print()
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }

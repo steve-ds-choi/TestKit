@@ -50,7 +50,7 @@ class Item: HeadProtocol, BodyProtocol {
 
 class ViewModel {
 
-    private let server = ServerAPI_itbook(token: "")
+    private let server = ServerAPI_github(token: "5NQ7LVXq3HKmL6BsDiqgMT1Vydn2df0ahC5w")
     private var bags   = Set<AnyCancellable>()
 
     @Published var list = [Item]()

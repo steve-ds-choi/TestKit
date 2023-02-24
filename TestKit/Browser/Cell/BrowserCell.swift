@@ -23,8 +23,8 @@ class BrowserCell: UITableViewCell {
         super.awakeFromNib()
 
         stackView.snp.makeConstraints {
-            $0.top.leading.bottom.trailing
-                .equalToSuperview().offset(2)
+            $0.top.leading.equalToSuperview().offset(2)
+            $0.bottom.trailing.equalToSuperview().offset(-2)
         }
     }
 
