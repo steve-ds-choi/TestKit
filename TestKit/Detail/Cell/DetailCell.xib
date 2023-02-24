@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <accessibilityOverrides/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,11 +16,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vkr-YH-Cb8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vkr-YH-Cb8">
+                        <rect key="frame" x="0.0" y="0.0" width="158.33333333333334" height="40.333333333333336"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="213-L0-gnU">
-                                <rect key="frame" x="6" y="10" width="100" height="24"/>
+                                <rect key="frame" x="6" y="9.9999999999999982" width="100" height="20.333333333333329"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="paR-3B-tp0"/>
                                 </constraints>
@@ -30,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZs-hN-12L">
-                                <rect key="frame" x="111" y="10" width="203" height="24"/>
+                                <rect key="frame" x="110.99999999999999" y="9.9999999999999982" width="41.333333333333329" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,16 +38,10 @@
                         <edgeInsets key="layoutMargins" top="10" left="6" bottom="10" right="6"/>
                     </stackView>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="Vkr-YH-Cb8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NOm-XD-WQP"/>
-                    <constraint firstItem="Vkr-YH-Cb8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="clJ-F6-gHP"/>
-                    <constraint firstAttribute="bottom" secondItem="Vkr-YH-Cb8" secondAttribute="bottom" id="hdK-Mq-3pq"/>
-                    <constraint firstAttribute="trailing" secondItem="Vkr-YH-Cb8" secondAttribute="trailing" id="j8k-2e-ibV"/>
-                </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="detailLabel" destination="aZs-hN-12L" id="gxu-D0-A2b"/>
+                <outlet property="stackView" destination="Vkr-YH-Cb8" id="hJ1-iz-8sz"/>
                 <outlet property="titleLabel" destination="213-L0-gnU" id="CPS-Ii-VMr"/>
             </connections>
             <point key="canvasLocation" x="44.274809160305338" y="-11.267605633802818"/>

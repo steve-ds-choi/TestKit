@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="tableView" destination="1RC-sO-cX3" id="U59-c6-vCq"/>
                 <outlet property="textField" destination="Jwx-ge-bhb" id="U0M-Zr-a8W"/>
+                <outlet property="titleView" destination="RKL-9V-fS5" id="rJb-ni-8fr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,8 +21,9 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKL-9V-fS5">
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RKL-9V-fS5">
                     <rect key="frame" x="0.0" y="0.0" width="390" height="107"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="도서명을 입력하세요." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jwx-ge-bhb">
                             <rect key="frame" x="8" y="55" width="374" height="34"/>
@@ -32,8 +34,9 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemMintColor"/>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="140" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1RC-sO-cX3">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="140" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1RC-sO-cX3">
                     <rect key="frame" x="0.0" y="107" width="390" height="737"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBrownColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="XGs-kv-fIB"/>
@@ -43,16 +46,6 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="RKL-9V-fS5" secondAttribute="bottom" constant="-60" id="OK2-ln-ne2"/>
-                <constraint firstItem="RKL-9V-fS5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Obe-nt-E8K"/>
-                <constraint firstAttribute="bottom" secondItem="1RC-sO-cX3" secondAttribute="bottom" id="Qvw-sl-Jmb"/>
-                <constraint firstItem="RKL-9V-fS5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vee-Tr-Tbw"/>
-                <constraint firstItem="1RC-sO-cX3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YUP-rB-Qsd"/>
-                <constraint firstItem="1RC-sO-cX3" firstAttribute="top" secondItem="RKL-9V-fS5" secondAttribute="bottom" id="f8h-fl-wo1"/>
-                <constraint firstItem="1RC-sO-cX3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="peh-jb-VrH"/>
-                <constraint firstItem="RKL-9V-fS5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tIq-M2-xEa"/>
-            </constraints>
             <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>
         </view>
     </objects>

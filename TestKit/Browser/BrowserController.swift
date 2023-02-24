@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import SnapKit
 
 class BrowserController: TKViewController {
 
@@ -18,20 +19,34 @@ class BrowserController: TKViewController {
 
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet weak var titleView: UIView!
+    
     private var rowForReload = -1
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loadLayout()
         loadTable()
-
+        
         bindControl()
         bindModel()
     }
 }
 
 extension BrowserController {
+
+    private func loadLayout() {
+        titleView.snp.makeConstraints {
+            $0.top.left.right.equalToSuperview()
+            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.top).offset(60)
+        }
+
+        tableView.snp.makeConstraints {
+            $0.top.equalTo(titleView.snp.bottom)
+            $0.bottom.left.right.equalToSuperview()
+        }
+    }
 
     private func loadTable() {
         tableView.registerCell(BrowserCell.self)
@@ -61,7 +76,7 @@ extension BrowserController {
                 self.reload()
             }
             .store(in: &bags)
-        
+
         vm.$body
             .sink {
                 self.showDetail($0)

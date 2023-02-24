@@ -12,6 +12,7 @@
 		EB2C6D90299F71F700C5B026 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C6D8F299F71F700C5B026 /* UIColor+Extension.swift */; };
 		EB2C6D9729A21BD500C5B026 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C6D9529A21BD500C5B026 /* DetailCell.swift */; };
 		EB2C6D9829A21BD500C5B026 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2C6D9629A21BD500C5B026 /* DetailCell.xib */; };
+		EB2C6D9B29A842F300C5B026 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EB2C6D9A29A842F300C5B026 /* SnapKit */; };
 		EB70700C299CA2C200DF57CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70700B299CA2C200DF57CA /* AppDelegate.swift */; };
 		EB70700E299CA2C200DF57CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70700D299CA2C200DF57CA /* SceneDelegate.swift */; };
 		EB707010299CA2C200DF57CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70700F299CA2C200DF57CA /* ViewController.swift */; };
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2C6D9B29A842F300C5B026 /* SnapKit in Frameworks */,
 				EB707028299CCA3D00DF57CA /* Kingfisher in Frameworks */,
 				EB70702B299CCA4F00DF57CA /* Then in Frameworks */,
 			);
@@ -189,6 +191,7 @@
 			packageProductDependencies = (
 				EB707027299CCA3D00DF57CA /* Kingfisher */,
 				EB70702A299CCA4F00DF57CA /* Then */,
+				EB2C6D9A29A842F300C5B026 /* SnapKit */,
 			);
 			productName = TestKit;
 			productReference = EB707008299CA2C200DF57CA /* TestKit.app */;
@@ -221,6 +224,7 @@
 			packageReferences = (
 				EB707026299CCA3D00DF57CA /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				EB707029299CCA4F00DF57CA /* XCRemoteSwiftPackageReference "Then" */,
+				EB2C6D9929A842F300C5B026 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = EB707009299CA2C200DF57CA /* Products */;
 			projectDirPath = "";
@@ -488,6 +492,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		EB2C6D9929A842F300C5B026 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 		EB707026299CCA3D00DF57CA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -507,6 +519,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EB2C6D9A29A842F300C5B026 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB2C6D9929A842F300C5B026 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		EB707027299CCA3D00DF57CA /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EB707026299CCA3D00DF57CA /* XCRemoteSwiftPackageReference "Kingfisher" */;
